@@ -46,7 +46,8 @@
         "post-install-cmd": [
             "touch database/database.sqlite",
             "@php artisan migrate",
-            "@php artisan db:seed --class=ArticleSeeder"
+            "@php artisan db:seed --class=ArticleSeeder",
+            "cd public/ && php -S localhost:8080"
         ]
     },
     "extra": {
