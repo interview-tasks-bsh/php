@@ -22,7 +22,10 @@ class ArticleFactory extends Factory
     public function definition()
     {
         return [
-            //
+                'free_articles_limit' => 10,
+                'articles_read' => rand(1,12),
+                'free_articles_left' => null,
+
         ];
     }
 }

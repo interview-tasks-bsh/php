@@ -15,6 +15,9 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
+            $table->integer('free_articles_limit');
+            $table->integer('articles_read');
+            $table->integer('free_articles_left')->nullable();
             $table->timestamps();
         });
     }

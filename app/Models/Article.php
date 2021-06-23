@@ -8,5 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends MainEntry
 {
     use HasFactory;
+
     protected $guarded = [];
+    protected $hidden = ['created_at', 'updated_at', 'id'];
 }

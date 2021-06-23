@@ -9,3 +9,4 @@ class MainEntry extends Model
 {
     use HasFactory;
 }
+
