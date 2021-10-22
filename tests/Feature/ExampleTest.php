@@ -18,7 +18,7 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function test_first()
+    public function test_firstTask()
     {
         $baseEntity = BaseEntity::factory()->create();
 
@@ -53,10 +53,5 @@ class ExampleTest extends TestCase
         $b = $names->getFullName();
 
         $this->assertTrue($b == 'John');
-    }
-
-    public function test_dupa()
-    {
-
     }
 }
